@@ -1,0 +1,20 @@
+@import 'base/intro';
+@import "base/reset";
+@import "base/font";
+@import "base/color";
+@import "base/functions";
+@import "base/tools";
+@import "advanced/header";
+@import "advanced/footer";
+@import "advanced/page-title";
+@import "advanced/content";
+@import "advanced/elementor";
+@import "advanced/summary";
+
+body {
+    font-family: $garamond-ligth;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    color: $black;
+}

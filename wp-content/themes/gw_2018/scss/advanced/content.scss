@@ -1,0 +1,181 @@
+#content {
+
+    div.platter {
+        //max-width: 1440px;
+        margin: 0 auto;
+        padding: 100px 20px;
+        position: relative;
+        background-color: $blue_light;
+
+        article.content-page {
+
+            min-height: 350px;
+            padding: 30px 4% 70px;
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: $white;
+
+            h1, h2, h3, h4, h5, h6, p, ul, ol {
+                max-width: 768px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                line-height: 1.4em;
+                margin: 40px 0 10px;
+                color: $blue;
+                font-family: $abrade-bold;
+            }
+
+            h2 {
+                font-size: 1.4em;
+                font-family: $abrade;
+                letter-spacing: 0.1em;
+                margin: 30px 0 10px;
+                color: $blue;
+            }
+
+            h3 {
+                font-size: 1em;
+                font-family: $abrade;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                margin: 20px 0 10px;
+                color: $blue-dark;
+            }
+
+            h4 {
+                font-size: 0.8em;
+                font-family: $abrade-bold;
+                text-transform: uppercase;
+                letter-spacing: 0em;
+                margin: 20px 0 10px;
+                color: $blue-dark;
+            }
+
+            p {
+                font-size: 0.9em;
+                margin: 5px 0 10px;
+
+                a {
+                    color: $blue-dark;
+                    transition: color 300ms ease;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+
+                em {
+                    font-family: $garamond-ligth-i;
+                }
+
+                strong {
+                    font-family: $garamond-bold;
+                }
+            }
+
+            blockquote {
+
+                border-left: 3px solid $blue;
+                padding: 7px 15px;
+                margin: 20px 0 20px 2px;
+
+                p {
+                    margin: 0;
+                }
+
+            }
+
+            ol,
+            ul {
+                padding: 10px 0 10px 25px;
+
+                li {
+                    font-size: 0.9em;
+                    color: $black;
+                    padding: 0 0 5px;
+                }
+            }
+
+            a.button {
+                display: inline-block;
+                background-color: $blue;
+                color: $white;
+                padding: 4px 10px 3px;
+                line-height: 1.4em;
+                text-decoration: none;
+                font-family: $abrade;
+                text-transform: uppercase;
+                font-size: 0.9em;
+                transition: background-color 300ms ease;
+                margin: 5px 10px 5px 0;
+
+                &:hover {
+                    color: $white;
+                    background-color: $blue_dark;
+                }
+
+            }
+        }
+    }
+}
+
+.page-template-page-summary #content {
+
+    div.platter {
+
+        article.content-page {
+            min-height: inherit;
+            padding: 50px 20px;
+            margin: -50px auto 50px;
+
+            h1, h2, h3, h4, h5, h6, p, ul, ol {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+h1, h2, h3, h4 {
+    font-family: $abrade-light;
+}
+
+h5, h6 {
+    font-family: $garamond-bold;
+}
+
+p {
+    font-family: $garamond-ligth;
+    letter-spacing: 0.05em;
+    line-height: 1.3em;
+    color: $black;
+}
+
+@media only screen and (max-width: 767px) {
+
+    body > header {
+        background-color: transparent;
+    }
+
+    #content {
+
+        div.platter {
+            padding: 30px 2% 50px;
+        }
+    }
+
+    .page-template-page-summary #content {
+
+        div.platter {
+
+            article.content-page {
+                margin: 0px auto 50px;
+                padding: 20px;
+            }
+        }
+    }
+}

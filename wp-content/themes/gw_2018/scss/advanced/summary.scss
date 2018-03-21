@@ -1,0 +1,134 @@
+section.summary {
+
+    max-width: 960px;
+    margin: 0 auto;
+
+    article {
+        position: relative;
+        height: 0;
+        padding-bottom: 50%;
+        width: 100%;
+        background-color: $white;
+        margin: 0 0 70px;
+        display: flex;
+
+        &:nth-child(even) {
+            .content {
+                right: 0;
+            }
+
+            figure {
+                left: 0;
+                right: inherit;
+            }
+        }
+
+        .content {
+            width: 36%;
+            max-height: calc(100% - 100px);
+            display: block;
+            position: absolute;
+            z-index: 200;
+            text-decoration: none;
+            padding: 50px 7%;
+            overflow-scrolling: auto;
+            overflow-y: scroll;
+
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+
+            h2 {
+                font-size: 1.3em;
+                letter-spacing: 0.3em;
+                color: $blue;
+                text-transform: uppercase;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            a {
+                background-color: $blue;
+                padding: 5px 10px;
+                display: inline-block;
+                margin: 20px 0 0;
+                color: $white;
+                text-decoration: none;
+                font-family: $abrade;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+                font-size: 0.8em;
+                line-height: 1.4em;
+                transition: background-color 300ms ease;
+
+                &:hover {
+                    background-color: $blue_dark;
+                }
+            }
+        }
+
+        figure {
+            width: 50%;
+            padding-bottom: 50%;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 100;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        display: table;
+
+
+        article {
+            height: auto;
+            padding-bottom: 0;
+            display: inline-block;
+            width: calc(50% - 20px);
+            margin: 10px 10px 50px;
+            vertical-align: top;
+
+            figure {
+                position: relative;
+                width: 100%;
+                padding-bottom: 100%;
+            }
+
+            .content {
+                position: relative;
+                width: 86%;
+                top: inherit;
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+            }
+
+        }
+    }
+
+    @media only screen and (max-width: 650px) {
+        display: block;
+
+        article {
+            width: 100%;
+            margin: 0 0 50px;
+
+            figure {
+
+            }
+
+            .content {
+
+            }
+
+        }
+    }
+}
